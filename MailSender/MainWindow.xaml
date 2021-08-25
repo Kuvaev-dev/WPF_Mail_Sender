@@ -1,0 +1,44 @@
+﻿<Window x:Class="MailSender.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:MadMail"
+        mc:Ignorable="d"
+        Height="550" Width="800" WindowStyle="None" AllowsTransparency="True" Background="Transparent" ResizeMode="NoResize">
+    <WindowChrome.WindowChrome>
+        <WindowChrome CaptionHeight="60"></WindowChrome>
+    </WindowChrome.WindowChrome>
+
+    <Border CornerRadius="5" BorderThickness="4" Background="#0078D7" BorderBrush="#62B6E4">
+        <Grid Margin="5,5,5,2">
+            <StackPanel WindowChrome.IsHitTestVisibleInChrome="True" Height="45" VerticalAlignment="Top" Orientation="Horizontal">
+                <Image Margin="5,5,0,5" Source="C:\Users\william\Desktop\visual studio\MadMail\MadMail\img\mail.ico"></Image>
+                <Label Margin="0,0,0,0" FontSize="30" FontFamily="Impact" VerticalAlignment="Center" Foreground="#F4F0E6">C-MAIL</Label>
+                <Button Name="QuitBtn" Click="QuitBtn_Click" Width="40" Height="40" Padding="10" Margin="600,0,0,0" Background="Transparent" BorderThickness="0">
+                    <Image Source="D:\Программирование\WPF\MailSender\MailSender\img\exit1.ico"></Image>
+                </Button>
+            </StackPanel>
+
+            <Frame Height="430" Background="White" NavigationUIVisibility="Hidden" Name="MainFrame"/>
+         
+            <StackPanel  VerticalAlignment="Bottom" HorizontalAlignment="Center" Orientation="Horizontal" Height="50" Width="800">
+                <Button Name="SettingBtn" Click="SettingBtn_Click" Width="100" Margin="180,5,0,0" Padding="5" Background="#62B6E4"  BorderBrush="#73BCF1" BorderThickness="1">
+                    <Image Source="D:\Программирование\WPF\MailSender\MailSender\img\set.ico"></Image>
+                </Button>
+
+                <Button Name="InboxBtn" Click="InboxBtn_Click" Width="100" Margin="10,5,0,0" Padding="5" Background="#62B6E4"  BorderBrush="#73BCF1" BorderThickness="1">
+                    <Image Source="D:\Программирование\WPF\MailSender\MailSender\img\mail.ico"></Image>
+                </Button>
+
+                <Button Name="OutBoxMailBtn" Click="OutBoxMailBtn_Click" BorderThickness="1" BorderBrush="#73BCF1" Width="100" Margin="10,5,0,0" Padding="5" Background="#62B6E4">
+                    <Image Source="D:\Программирование\WPF\MailSender\MailSender\img\out.ico"></Image>
+                </Button>
+
+                <Button Name="WriteMailBtn" Click="WriteMailBtn_Click" Width="100" Margin="10,5,0,0" Padding="5" Background="#62B6E4"  BorderBrush="#73BCF1" BorderThickness="1">
+                    <Image Source="D:\Программирование\WPF\MailSender\MailSender\img\new.ico"></Image>
+                </Button>
+            </StackPanel>
+        </Grid>
+    </Border>
+</Window>
