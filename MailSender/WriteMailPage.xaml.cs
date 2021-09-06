@@ -83,7 +83,7 @@ namespace MailSender
                 SmtpClient client = new SmtpClient("smtp.gmail.com", 587);
                 client.EnableSsl = false;
                 client.Timeout = 10000;
-                client.Credentials = new NetworkCredential("fpouhela@gmail.com", "william100");
+                client.Credentials = new NetworkCredential("mail", "name");
                 client.Send(msg);
 
                 MessageBox.Show("Successfully Message Sent!");
