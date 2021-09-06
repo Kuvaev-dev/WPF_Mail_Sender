@@ -77,8 +77,8 @@ namespace MailSender
             {
                 string mail = "salut";
                 MailMessage msg = new MailMessage();
-                msg.From = new MailAddress("fpouhela@gmail.com");
-                msg.To.Add(new MailAddress("francpouhela@yahoo.com"));
+                msg.From = new MailAddress("on mail");
+                msg.To.Add(new MailAddress("to mail"));
                 msg.Body = mail;
                 SmtpClient client = new SmtpClient("smtp.gmail.com", 587);
                 client.EnableSsl = false;
